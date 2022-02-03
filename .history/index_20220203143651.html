@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Laying Out Book Pages</title>
+    </head>
+    <header>
+        <h1>3.2 New HTML5 Form <code>input</code> Types</h1>
+    </header>
+    <body>
+        <section class="color-input-type">
+            <header>
+                <h2>3.2.1 <code>input</code> Type <code>color</code></h2>
+            </header>
+            <p>
+                The color input type (Fig. 3.1, lines 20–21) enables the user to enter a color. At
+                the time of this writing, most browsers render the <code>color input</code> type as
+                a text field in which the user can enter a hexadecimal code or a color name. In the
+                future, when you click a <code>color input</code>, browsers will likely display a
+                <em>color picker</em> similar to the Microsoft Windows color dialog shown in Fig.
+                3.2.
+            </p>
+            <figure>
+                <img src="images\OperaColorInput.png" alt="Microsoft Windows color dialog" />
+                <figcaption>Fig. 3.2 | A dialog for choosing colors.</figcaption>
+            </figure>
+        </section>
+        <section class="autofocus-attribute">
+            <header>
+                <h2><code>autofocus</code> Attribute</h2>
+            </header>
+            <p>
+                The <code>autofocus</code> <strong>attribute</strong> (Fig. 3.1, line 20)—an
+                optional attribute that can be used in only one <code>input</code> element on a
+                form—automatically gives the focus to the <code>input</code> element, allowing the
+                user to begin typing in that element immediately. Figure 3.3 shows
+                <code>autofocus</code> on the <code>color</code> element—the first
+                <code>input</code> element in our form—as rendered in Chrome. You do not need to
+                include <code>autofocus</code> in your forms.
+            </p>
+            <figure>
+                <img
+                    src="images\Autofocus.png"
+                    alt="web page demo of autofocus on a color input field"
+                />
+                <figcaption>
+                    Fig. 3.3 | Autofocus in the <code>color input</code> element using Chrome.
+                </figcaption>
+            </figure>
+        </section>
+        <section class="input-validation">
+            <header>
+                <h2>Validation</h2>
+            </header>
+            <p>
+                Traditionally it’s been difficult to validate user input, such as ensuring that an
+                e-mail ad-dress, URL,date or time is entered in the proper format. The new HTML 5
+                <code>input</code> types are <em>self validating</em> on the client side,
+                eliminating the need to add complicated JavaScript code to your web pages to
+                validate user input, reducing the amount of invalid data submitted and consequently
+                reducing Internet traffic between the server and the client to correct invalid
+                input. <em>The server should still validate all user input.</em>
+            </p>
+            <p>
+                When a user enters data into a form then submits the form (in this example, by
+                clicking the <strong>Submit</strong> button), the browser immediately checks the
+                self-validating elements to ensure that the data is correct. For example, if a user
+                enters an incorrect hexadecimal color value when using a browser that renders the
+                <code>color</code> elements as a text field (e.g., Chrome), a callout pointing to
+                the element will appear, indicating that an invalid value was entered (Fig. 3.4).
+                Figure 3.5 lists each of the new HTML5 <code>input</code> types and provides
+                examples of the proper formats required for each type of data to be valid.
+            </p>
+            <figure>
+                <img
+                    src="images\SelfValidationChrome.png"
+                    alt="web page demo of validation preventing a non color input into a color input field"
+                />
+                <figcaption>Fig. 3.4 | Validating a color input in Chrome.</figcaption>
+            </figure>
+        </section>
+        <section class="self-validating-types">
+            <figure>
+                <table class="validation-table">
+                    <thead>
+                        <th>input type</th>
+                        <th>Format</th>
+                    </thead>
+                    <tr>
+                        <td><code>color</code></td>
+                        <td>Hexadecimal code</td>
+                    </tr>
+                    <tr>
+                        <td><code>date</code></td>
+                        <td><code>yyyy-mm-dd</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>datetime</code></td>
+                        <td><code>yyyy-mm-dd</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>datetime-local</code></td>
+                        <td><code>yyyy-mm-ddThh:mm</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>month</code></td>
+                        <td><code>yyyy-mm</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>number</code></td>
+                        <td>Any numerical value</td>
+                    </tr>
+                    <tr>
+                        <td><code>email</code></td>
+                        <td><code>name@domain.com</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>url</code></td>
+                        <td>
+                            <a href="http://www.domainname.com"
+                                ><code>http://www.domainname.com</code></a
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>time</code></td>
+                        <td><code>hh:mm</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>week</code></td>
+                        <td><code>yyyy-Wnn</code></td>
+                    </tr>
+                </table>
+                <figcaption>Fig. 3.5 Self-validating <code>input</code> types.</figcaption>
+            </figure>
+            <aside>
+                <p>
+                    If you want to bypass validation, you can add the <code>formnovalidate</code>
+                    <strong>attribute</strong> to <code>input</code> type <code>submit</code> in
+                    line 101:
+                </p>
+                <div class="form-no-val">
+                    <code>&lt;input type = "submit" value = "Submit" formnovalidate/&gt;</code>
+                </div>
+            </aside>
+        </section>
+    </body>
+</html>

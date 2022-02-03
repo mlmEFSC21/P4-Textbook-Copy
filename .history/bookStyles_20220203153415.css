@@ -15,15 +15,8 @@
     box-sizing: border-box;
 }
 body {
-    margin: 1.5rem;
-    padding: 0 80px;
-    padding: auto;
     background-color: var(--clr-background);
     color: var(--clr-font-prime);
-}
-code,
-h1 {
-    color: var(--clr-font-code);
 }
 table {
     border-collapse: collapse;
@@ -36,5 +29,5 @@ a {
 }
 th,
 div {
-    background-color: var(--clr-background-accent);
+    background-color: rgba(70, 114, 115, 0.15);
 }

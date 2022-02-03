@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 body {
-    margin: 1.5rem;
+    margin: 80px;
     padding: 0 80px;
     padding: auto;
     background-color: var(--clr-background);

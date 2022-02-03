@@ -1,0 +1,21 @@
+:root {
+    --clr-prime: #;
+    --clr-second: #;
+    --clr-accent: #;
+    --clr-font-prime: black;
+    --clr-font-code: #446256;
+    --clr-font-figcap: darkgrey;
+    --clr-background: white;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+}
+table {
+    border-collapse: collapse;
+}
