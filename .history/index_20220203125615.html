@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Laying Out Book Pages</title>
+    </head>
+    <header>
+        <h1>3.2 New HTML5 Form <code>input</code> Types</h1>
+    </header>
+    <body>
+        <section class="color-input-type">
+            <header>
+                <h2>3.2.1 <code>input</code> Type <code>color</code></h2>
+            </header>
+            <p>
+                The color input type (Fig. 3.1, lines 20–21) enables the user to enter a color. At
+                the time ofthis writing, most browsers render the color input type as a text field
+                in which the user can enter a hexadecimal code or a color name. In the future, when
+                you click a color input, browsers will likely display a color picker similar to the
+                Microsoft Windows color dialog shown in Fig. 3.2.
+            </p>
+            <figure>
+                <img src="images\OperaColorInput.png" alt="Microsoft Windows color dialog" />
+                <figcaption>Fig. 3.2 | A dialog for choosing colors.</figcaption>
+            </figure>
+        </section>
+        <section class="autofocus-attribute">
+            <header>
+                <h2><code>autofocus</code> Attribute</h2>
+            </header>
+            <figure>
+                <img
+                    src="images\Autofocus.png"
+                    alt="web page demo of autofocus on a color input field"
+                />
+                <figcaption>
+                    Fig. 3.3 | Autofocus in the <code>color input</code> element using Chrome.
+                </figcaption>
+            </figure>
+        </section>
+        <section class="input-validation">
+            <header>
+                <h2>3.2.1 <code>input</code> Type <code>color</code></h2>
+            </header>
+            <figure>
+                <img
+                    src="images\SelfValidationChrome.png"
+                    alt="web page demo of validation preventing a non color input into a color input field"
+                />
+                <figcaption>Fig. 3.4 | Validating a color input in Chrome.</figcaption>
+            </figure>
+        </section>
+        <section class="self-validating-types">
+            <figure>
+                <table>
+                    <thead>
+                        <th>input type</th>
+                        <th>Format</th>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                </table>
+                <figcaption>Fig. 3.5 Self-validating <code>input</code> types.</figcaption>
+            </figure>
+            <aside>
+                <p>
+                    If you want to bypass validation, you can add the <code>formnovalidate</code
+                    ><strong>attribute</strong> to <code>input</code> type <code>submit</code> in
+                    line 101:
+                </p>
+                <div>
+                    <code>&lt;input type = "submit" value = "Submit" formnovalidate/&gt;</code>
+                </div>
+            </aside>
+        </section>
+    </body>
+</html>
