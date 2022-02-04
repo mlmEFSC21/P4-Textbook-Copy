@@ -7,13 +7,13 @@
         <link rel="stylesheet" href="bookStyles.css" />
         <title>Laying Out Book Pages</title>
     </head>
+    <header>
+        <!-- This is the header from the top of the page. Acts as a placeholder for Fig-1 as it wasn't included. -->
+        <h1 id="fig-1-placeholder">
+            3.2 New HTML5 Form <code><span class="header1">input</span></code> Types
+        </h1>
+    </header>
     <body>
-        <header>
-            <!-- This is the header from the top of the page. Acts as a placeholder for Fig-1 as it wasn't included. -->
-            <h1 id="fig-1-placeholder">
-                3.2 New HTML5 Form <code><span class="header1">input</span></code> Types
-            </h1>
-        </header>
         <section class="color-input-type">
             <header>
                 <h1>3.2.1 <code>input</code> Type <code>color</code></h1>
@@ -31,7 +31,7 @@
             </p>
             <figure>
                 <img
-                    src="images/OperaColorInput.png"
+                    src="images\OperaColorInput.png"
                     alt="Microsoft Windows color dialog"
                     id="color-input"
                 />
@@ -58,7 +58,7 @@
             </p>
             <figure>
                 <img
-                    src="images/Autofocus.png"
+                    src="images\Autofocus.png"
                     alt="web page demo of autofocus on a color input field"
                     id="autofocus"
                 />
@@ -101,7 +101,7 @@
             </p>
             <figure>
                 <img
-                    src="images/SelfValidationChrome.png"
+                    src="images\SelfValidationChrome.png"
                     alt="web page demo of validation preventing a non color input into a color input field"
                     id="self-validation"
                 />
@@ -127,12 +127,8 @@
                 </figcaption>
                 <table class="validation-table" id="fig-3.5-table">
                     <thead>
-                        <tr>
-                            Input type
-                        </tr>
-                        <tr>
-                            Format
-                        </tr>
+                        <th>input type</th>
+                        <th>Format</th>
                     </thead>
                     <tbody>
                         <tr>
