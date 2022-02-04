@@ -22,6 +22,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 57px 0;
     padding: 0 80px;
+    padding: auto;
     line-height: 1.5;
     background-color: var(--clr-background);
     color: var(--clr-font-prime);
