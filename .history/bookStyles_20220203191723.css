@@ -36,11 +36,8 @@ h1 {
     font-weight: 300;
     line-height: 1.5;
 }
-section header h1 {
-    color: #585858;
-    font-size: 1.75em;
-    font-style: normal;
-    font-weight: 300;
+h2 {
+    font-weight: 400;
 }
 h1,
 code {
