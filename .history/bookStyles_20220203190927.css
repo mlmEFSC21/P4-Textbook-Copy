@@ -82,7 +82,7 @@ table th {
     color: #2C6655;
     font-style: normal;
     font-weight: 600;
-    border: 1px solid var(--clr-table-border);
+    border-bottom: 1px solid var(--clr-table-border);
 }
 tbody {
     display: table-row-group;

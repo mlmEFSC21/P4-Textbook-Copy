@@ -1,0 +1,57 @@
+:root {
+    --clr-prime: #;
+    --clr-background-accent: rgba(70, 114, 115, 0.15);
+    --clr-font-links: #275b8a;
+    --clr-font-prime: #333;
+    --clr-font-code: #446256;
+    --clr-font-figcap: darkgrey;
+    --clr-background: white;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 19px;
+    font-family: sans-serif;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 57px 0;
+    padding: 0 80px;
+    padding: auto;
+    line-height: 1.5;
+    background-color: var(--clr-background);
+    color: var(--clr-font-prime);
+}
+h1,
+code {
+    color: var(--clr-font-code);
+}
+h1 {
+    font-size: 2.5em;
+    margin-top: 1.15em;
+    margin-bottom: 0.6em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.header1 {
+    font-size: larger;
+}
+table {
+    border-collapse: collapse;
+}
+a {
+    color: var(--clr-font-links);
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+th,
+div {
+    background-color: var(--clr-background-accent);
+}
